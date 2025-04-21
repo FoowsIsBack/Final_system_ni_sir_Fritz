@@ -1,7 +1,14 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-items: center;
-    padding-top: 200px;
+}
+
+.person{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 19%;
+    left: 38%;
 }
 
 .ui{
@@ -10,6 +17,9 @@ body{
     border-radius: 10px;
     box-shadow: 5px 10px 8px black;
     padding-bottom: 20px;
+    position: absolute;
+    top: 28%;
+    left: 38%;
 }
 
 .clickers{
@@ -22,6 +32,18 @@ body{
     border-radius: 10px;
     padding: 10px;
     width: 500px;
+}
+
+img{
+    width: 15%;
+    height: 15%;
+    border-radius: 8px;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.793);
 }
 
 h1{
