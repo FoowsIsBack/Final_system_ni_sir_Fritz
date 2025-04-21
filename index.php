@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon/person.png" type="icon">
-    <title>Login</title>
+    <title>Login Account</title>
 </head>
 <body>
 
-    <div class="ui">    
-        <form action="index.php" method="post">
-            <h1>LOGIN</h1>
-            <h3>Username</h3>
-            <input type="text" name="username" id="" placeholder="Enter username">
-            <h3>Password</h3>
-            <input type="password" name="password" id="" placeholder="Enter password">
-            <div class="clickers">
-                <input type="submit" value="LOG IN">
-            </div>            
-        </form>
+    <div class="main">
+        <div class="person">
+            <img src="icon/person.png" alt="person">
+        </div>
+    
+        <div class="ui">
+            <form action="index.php" method="post">
+                <h1>Login Account</h1>
+                <h3>Username</h3>
+                <input type="text" name="username" id="" placeholder="Enter username">
+                <h3>Password</h3>
+                <input type="password" name="password" id="" placeholder="Enter password">
+                <div class="clickers">
+                    <input type="submit" value="LOG IN">
+                </div>            
+            </form>
+        </div>
     </div>
 
     <?php
