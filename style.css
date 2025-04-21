@@ -11,6 +11,12 @@ body{
     left: 38%;
 }
 
+video{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
 .ui{
     border: 2px solid black;
     padding: 10px;
@@ -22,16 +28,16 @@ body{
     left: 38%;
 }
 
+.qr_generate{
+    position: absolute;
+    top: 5%;
+    left: 38%;
+}
+
+
 .clickers{
     padding-top: 20px;
     text-align: center;
-}
-
-.test{
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    width: 500px;
 }
 
 img{
@@ -57,17 +63,28 @@ input{
     outline: none;
     border-radius: 5px;
     border: 2px solid gray;
+    background-color: rgba(255, 255, 255, 0.488);
+    font-weight: 300;
 }
-
 
 input:focus{
     border: 2px solid rgb(23, 148, 197);
 }
 
-.click{
-    padding-top: 20px;
-    cursor: pointer;
-    text-align: center;
+.showP{
+    padding-top: 5px;
+}
+
+input[id="showPass"]{
+    accent-color: green;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+label[for="showPass"]{
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.793);
 }
 
 input[type="submit"]{
@@ -84,22 +101,4 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background-color: rgba(23, 148, 197, 0.872);
-}
-
-button[type="button"]{
-    background-color: red;
-    color: white;   
-    padding: 5px;
-}
-
-.result{
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    width: 500px;
-}
-
-.shit{
-    padding-left: 200px;
-    padding-top: 10px;
 }
