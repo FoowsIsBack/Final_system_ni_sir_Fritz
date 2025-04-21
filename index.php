@@ -9,6 +9,10 @@
 </head>
 <body>
 
+    <video autoplay muted loop>
+        <source src="video/bg.mp4" type="video/mp4">
+    </video>
+
     <div class="main">
         <div class="person">
             <img src="icon/person.png" alt="person">
@@ -18,12 +22,16 @@
             <form action="index.php" method="post">
                 <h1>Login Account</h1>
                 <h3>Username</h3>
-                <input type="text" name="username" id="" placeholder="Enter username">
+                <input type="text" name="username" placeholder="Enter username">
                 <h3>Password</h3>
-                <input type="password" name="password" id="" placeholder="Enter password">
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <div class="showP">
+                    <input type="checkbox" name="show" id="showPass">
+                    <label for="showPass">Show Password</label>
+                </div>
                 <div class="clickers">
                     <input type="submit" value="LOG IN">
-                </div>            
+                </div>
             </form>
         </div>
     </div>
@@ -50,6 +58,8 @@
         }
     }
     ?>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
