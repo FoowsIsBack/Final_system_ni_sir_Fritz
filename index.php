@@ -32,6 +32,10 @@
                 <div class="clickers">
                     <input type="submit" value="LOG IN">
                 </div>
+                 <p>———————————— OR ————————————</p>
+                <div class="registerAcc">
+                    <button class="regAcc" type="button" onclick="window.location.href='register.php'">Create New Account</button>
+                </div>
             </form>
         </div>
     </div>
