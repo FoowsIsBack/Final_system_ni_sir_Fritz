@@ -7,16 +7,16 @@ body{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 19%;
-    left: 38%;
+    top: 6%;
+    left: 35%;
 }
 
 .person1{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 21%;
-    left: 38%;
+    top: 6%;
+    left: 35%;
 }
 
 video{
@@ -34,8 +34,8 @@ video{
     box-shadow: 5px 10px 8px black;
     padding-bottom: 20px;
     position: absolute;
-    top: 28%;
-    left: 38%;
+    top: 15%;
+    left: 35%;
 }
 
 .qr_generate{
@@ -96,7 +96,6 @@ input:focus{
 
 .alreadyAcc{
     text-align: center;
-    padding-top: 20px;
     font-size: 20px;
     outline: none;  
 }
