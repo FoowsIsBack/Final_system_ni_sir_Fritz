@@ -30,9 +30,9 @@
                     <label for="showPass">Show Password</label>
                 </div>
                 <div class="clickers">
-                    <input type="submit" value="LOG IN">
+                    <input class="done" type="submit" value="LOG IN">
                 </div>
-                 <p>———————————— OR ————————————</p>
+                <p>─────────── OR ───────────</p>
                 <div class="registerAcc">
                     <button class="regAcc" type="button" onclick="window.location.href='register.php'">Create New Account</button>
                 </div>
@@ -40,28 +40,36 @@
         </div>
     </div>
 
-    <?php
+        <?php
+        $conn = mysqli_connect("localhost", "root", "", "qr_code");
 
-    $user = "root";
-    $pass = "root";
-
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $password = $_POST["password"] ?? '';
-        $username = $_POST["username"] ?? '';
-
-        if(empty($username) && empty($password)){
-            echo"<script>alert('Fill up the Username and Password!');</script>";
-        } else if ($username != $user && $password != $pass){
-            echo"<script>alert('Username and Password is wrong!');</script>";
-        } elseif ($username != $user){
-            echo"<script>alert('Username is wrong!');</script>";
-        } else if ($password != $pass){
-            echo"<script>alert('Password is wrong!');</script>";
-        } else {
-            header("Location: main.php");
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
         }
-    }
-    ?>
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $username = $_POST["username"] ?? '';
+            $password = $_POST["password"] ?? '';
+
+            $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+            $result = mysqli_query($conn, $query);
+
+            if (empty($username) || empty($password)) {
+                echo("<script>alert('Fill up the Username and Password!'); window.location.href='index.php';</script>");
+                exit;
+            }
+
+            if (mysqli_num_rows($result) === 1) {
+                header("Location: main.php");
+                exit;
+            } else {
+                echo("<script>alert('Incorrect username or password!'); window.location.href='index.php';</script>");
+            }
+        }
+
+        mysqli_close($conn);
+        ?>
+
 
     <script src="script.js"></script>
 
