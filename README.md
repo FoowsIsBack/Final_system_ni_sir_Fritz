@@ -4,7 +4,7 @@
 # SIGN UP
 ![image](https://github.com/user-attachments/assets/9ead96b2-7ab0-488e-b014-0034c316a634)
 
-#Register SQL table
+# Register SQL table
 ```sql
 CREATE DATABASE qr_code;
 
