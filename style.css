@@ -19,14 +19,6 @@ body{
     left: 35%;
 }
 
-video{
-    position: fixed;
-    right: 0;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
 .ui{
     border: 2px solid black;
     padding: 10px;
@@ -44,6 +36,25 @@ video{
     left: 38%;
 }
 
+.title{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}
+
+video{
+    position: fixed;
+    right: 0;   
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.listing{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
 
 .clickers{
     padding-top: 20px;
@@ -162,4 +173,154 @@ input[class="reg"]{
 
 input[class="reg"]:hover{
     background-color: rgb(14, 184, 14);
+}
+
+table{
+    width: 250%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 1px 4px 27px 4px rgba(0,0,0,0.69);
+}
+
+th{
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.651);
+}
+
+.classTH:hover{
+    background-color: rgba(128, 128, 128, 0.651);
+    color: black;
+}
+
+td{
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+table{
+    background-color: rgba(255, 255, 255, 0.776);
+}
+
+tr{
+    border-radius: 10px;
+}
+
+tr:hover{
+    background-color: rgb(75, 188, 75);
+    color: white;
+}
+
+.pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.dev_title{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    width: 100%;
+}
+
+.h1_title{
+    font-size: 250%;
+    font-weight: 200%;
+}
+
+.led{
+    position: absolute;
+    top: 9%;
+    left: 45%;
+}
+
+.leader{
+    font-size: 300%;
+}
+
+.dave{
+    position: absolute;
+    top: 19%;
+    left: 39%;
+    padding: 10px;
+    background-color: white;
+    border: 20px;
+    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img[src="dev_icon/dave.jpg"]{
+    width: 80%;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.member{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+
+.brylle{
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    padding: 10px;
+    background-color: white;
+    border: 20px;
+    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img[src="dev_icon/brylle.jpg"]{
+    width: 70%;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.member1{
+    position: absolute;
+    top: 35%;
+    left: 75%;
+}
+
+.lopez{
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    padding: 10px;
+    background-color: white;
+    border: 20px;
+    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img[src="dev_icon/lopez.jpg"]{
+    width: 74%;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+img[src="icon/back.png"]{
+    position: absolute;
+    top: 102%;
+    left: 1%;
+    cursor: pointer;
 }
