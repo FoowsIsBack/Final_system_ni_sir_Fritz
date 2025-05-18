@@ -15,4 +15,13 @@ CREATE TABLE users (
     username VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(100) NOT NULL
 );
+
+CREATE TABLE infomation (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    profile_pic VARCHAR(255),
+    age INT,
+    user_info VARCHAR(255),
+    gender VARCHAR(10)
+);
+
 ```
