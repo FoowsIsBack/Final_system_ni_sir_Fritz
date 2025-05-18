@@ -18,11 +18,10 @@ CREATE TABLE users (
 
 CREATE TABLE information (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    user_info VARCHAR(255) NOT NULL,
-    profile_pic VARCHAR(255) NOT NULL,
-    age INT NOT NULL,
-    gender VARCHAR(20) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    profile_pic VARCHAR(255),
+    age INT,
+    user_info VARCHAR(255),
+    gender VARCHAR(10)
 );
 
 ```
