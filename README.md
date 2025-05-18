@@ -16,12 +16,13 @@ CREATE TABLE users (
     password VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE infomation (
+CREATE TABLE information (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    profile_pic VARCHAR(255),
-    age INT,
-    user_info VARCHAR(255),
-    gender VARCHAR(10)
+    user_info VARCHAR(255) NOT NULL,
+    profile_pic VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 ```
