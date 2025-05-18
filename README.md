@@ -1,8 +1,14 @@
+# MAIN
+![image](https://github.com/user-attachments/assets/13259011-55f1-47ed-bc0d-3271d90dc42a)
+
 # LOGIN
 ![image](https://github.com/user-attachments/assets/ea4dc852-aee2-4da0-9322-049bfe1900ea)
 
 # SIGN UP
 ![image](https://github.com/user-attachments/assets/9ead96b2-7ab0-488e-b014-0034c316a634)
+
+# DEv
+![image](https://github.com/user-attachments/assets/17a29cbd-1ea0-41f4-91d2-ce6c5c2c7d2d)
 
 # Register SQL table
 ```sql
