@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="icon/person.png" type="icon">
+    <link rel="shortcut icon" href="icon/person.png" type="image/png">
     <title>Login Account</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
         </div>
     
         <div class="ui">
-            <form action="index.php" method="post">
+            <form action="login.php" method="post">
                 <h1>Login Account</h1>
                 <h3>Username</h3>
                 <input type="text" name="username" placeholder="Enter username">
@@ -55,7 +55,7 @@
             $result = mysqli_query($conn, $query);
 
             if (empty($username) || empty($password)) {
-                echo("<script>alert('Fill up the Username and Password!'); window.location.href='index.php';</script>");
+                echo("<script>alert('Fill up the Username and Password!'); window.location.href='login.php';</script>");
                 exit;
             }
 
@@ -63,7 +63,7 @@
                 header("Location: main.php");
                 exit;
             } else {
-                echo("<script>alert('Incorrect username or password!'); window.location.href='index.php';</script>");
+                echo("<script>alert('Incorrect username or password!'); window.location.href='login.php';</script>");
             }
         }
 
