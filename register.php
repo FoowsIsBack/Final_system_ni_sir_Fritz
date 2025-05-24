@@ -34,7 +34,7 @@
                 </div>
                 <p>─────────── OR ───────────</p>
                 <div class="alreadyAcc">
-                    <a href="index.php">Already have an account?</a>
+                    <a href="login.php">Already have an account?</a>
                 </div>
             </form>
         </div>
@@ -59,7 +59,7 @@
 
             $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
             if (mysqli_query($conn, $sql)) {
-                echo("<script>alert('Account registered successfully!'); window.location.href='index.php';</script>");
+                echo("<script>alert('Account registered successfully!'); window.location.href='login.php';</script>");
             } else {
                 echo("Error: ") . mysqli_error($conn);
             }
