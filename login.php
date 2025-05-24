@@ -60,6 +60,7 @@
             }
 
             if (mysqli_num_rows($result) === 1) {
+                sleep(3);
                 header("Location: main.php");
                 exit;
             } else {
