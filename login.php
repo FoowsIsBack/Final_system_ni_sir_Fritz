@@ -61,7 +61,7 @@
 
             if (mysqli_num_rows($result) === 1) {
                 sleep(3);
-                header("Location: main.php");
+                header("Location: list.php");
                 exit;
             } else {
                 echo("<script>alert('Incorrect username or password!'); window.location.href='login.php';</script>");
