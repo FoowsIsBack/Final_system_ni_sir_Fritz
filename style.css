@@ -1,6 +1,7 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-items: center;
+    margin: 0;
 }
 
 .person{
@@ -323,4 +324,69 @@ img[src="icon/back.png"]{
     top: 102%;
     left: 1%;
     cursor: pointer;
+}
+
+.title1{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 1900px;
+}
+
+.logo_dex{
+    width: 20%;
+    padding-top: 33%;
+    padding-left: 45%;
+    height: 20%;
+}
+
+.logo{
+    position: absolute;
+    left: 36%;
+    top: 11%;
+}
+
+.choice {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border: 2px solid black;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 4px 27px 4px rgba(0,0,0,0.69);
+}
+
+.circle1{
+    position: absolute;
+    top: 10px;
+}
+
+.child{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    padding-left: 65px;
+    gap: 12%;
+}
+
+button[class="tolist"]{
+    background-color: rgb(75, 188, 75);
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 1px 4px 27px 4px rgba(0,0,0,0.69);
+    font-weight: bold;
+}
+
+button[class="admin"]{
+    background-color: red;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 1px 4px 27px 4px rgba(0,0,0,0.69);
+    font-weight: bold;
 }
