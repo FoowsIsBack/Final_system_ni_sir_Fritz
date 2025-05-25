@@ -39,11 +39,10 @@
                     <hr>
                     <div class="clickers">
                         <button type="submit">Add Record</button>
-                        <button class="tolist" type="button" onclick="window.location.href='list.php'">View Details</button>
                     </div>
                     <div class="dev">
                         <a class="setting" href="developer.php">Developer?</a>
-                        <a href="index.php">
+                        <a href="login.php">
                             <img src="icon/logout.png" alt="logout">
                         </a>
                     </div>
