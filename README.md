@@ -1,6 +1,9 @@
 # MAIN
 ![image](https://github.com/user-attachments/assets/13259011-55f1-47ed-bc0d-3271d90dc42a)
 
+# Start
+![image](https://github.com/user-attachments/assets/e9a2c22e-338f-41de-b46e-8f65d6a2eeb6)
+
 # LOGIN
 ![image](https://github.com/user-attachments/assets/ea4dc852-aee2-4da0-9322-049bfe1900ea)
 
