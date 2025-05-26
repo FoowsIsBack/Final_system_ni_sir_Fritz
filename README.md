@@ -1,7 +1,7 @@
 # MAIN
 ![image](https://github.com/user-attachments/assets/fbc5c850-965d-4520-bf4e-5e12abd8c164)
 
-# Start
+# START
 ![image](https://github.com/user-attachments/assets/e9a2c22e-338f-41de-b46e-8f65d6a2eeb6)
 
 # LOGIN
@@ -12,6 +12,9 @@
 
 # All Student details
 ![image](https://github.com/user-attachments/assets/e5038361-3378-483a-ad09-a7e08832f407)
+
+# DASHBOARD
+![image](https://github.com/user-attachments/assets/5055dc20-b40c-4ee5-8fde-de97d55ce17e)
 
 # DEv
 ![image](https://github.com/user-attachments/assets/17a29cbd-1ea0-41f4-91d2-ce6c5c2c7d2d)
