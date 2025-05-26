@@ -1,5 +1,5 @@
 # MAIN
-![image](https://github.com/user-attachments/assets/fbc5c850-965d-4520-bf4e-5e12abd8c164)
+![image](https://github.com/user-attachments/assets/8a0cffd9-4253-4419-b1c0-219b8a18de81)
 
 # START
 ![image](https://github.com/user-attachments/assets/e9a2c22e-338f-41de-b46e-8f65d6a2eeb6)
