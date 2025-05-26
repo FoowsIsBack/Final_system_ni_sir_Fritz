@@ -43,6 +43,18 @@ body{
     left: 40%;
 }
 
+.dash_title{
+    position: absolute;
+    top: 8.7%;
+    left: 21.6%;
+}
+
+.dash_icon{
+    position: absolute;
+    top: 11%;
+    left: 19%;
+}
+
 video{
     position: fixed;
     right: 0;   
@@ -513,4 +525,61 @@ button[class="total"]:hover{
 
 button[class="logout"]:hover{
     background-color: rgb(177, 3, 3);
+}
+
+.dashboard_info{
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 27px 4px rgba(0, 0, 0, 0.69);
+    width: 60%;
+    display: flex;
+    gap: 1%;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.box1{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 1px 4px 27px 4px rgba(0, 0, 0, 0.69);
+}
+
+.box2{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 1px 4px 27px 4px rgba(0, 0, 0, 0.69);
+}
+
+.box3{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 1px 4px 27px 4px rgba(0, 0, 0, 0.69);
+}
+
+.h22{
+    text-align: center;
+}
+
+.pp{
+    text-align: center;
+    font-size: larger;
+    color: blue;
+}
+
+.out1{
+    position: absolute;
+    top: 41%;
+    left: 19%;
 }
