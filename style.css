@@ -54,12 +54,18 @@ video{
 .listing{
     position: absolute;
     top: 15%;
-    left: 20%;
+    left: 15%;
 }
 
 .clickers{
     padding-top: 20px;
     text-align: center;
+}
+
+.out{
+    position: absolute;
+    top: 70%;
+    left: 35%;
 }
 
 img{
@@ -469,4 +475,8 @@ button[class="admin"]{
     width: 150px;
     box-shadow: 1px 4px 27px 4px rgba(0,0,0,0.69);
     font-weight: bold;
+}
+
+.setting{
+    color: red;
 }
