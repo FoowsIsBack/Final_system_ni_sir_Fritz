@@ -24,7 +24,7 @@
                     <h2>FULL NAME:</h2>
                     <input type="text" name="user_info" placeholder="Ex. Dave Bangcoyo" required>
 
-                    <h2>AGE</h2>
+                    <h2>AGE:</h2>
                     <input type="number" name="age" placeholder="Ex. 20" required>
 
                     <h2>GENDER:</h2>
