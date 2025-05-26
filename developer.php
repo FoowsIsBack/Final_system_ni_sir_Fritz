@@ -53,9 +53,41 @@
 
     <div class="lopez">
         <a href="https://www.facebook.com/kim.joshua.lopez.2025" target="_blank">
-            <img src="dev_icon/lopez.jpg" alt="lopez ">
+            <img src="dev_icon/lopez.jpg" alt="lopez">
         </a>
         <h2>Name: Kim Joshua Lopez</h2>
+        <h2>Section: BSIT - 2B</h2>
+    </div>
+
+    <div class="rivera">
+        <a href="https://www.facebook.com/itsmepododo" target="_blank">
+            <img src="dev_icon/rivera.png" alt="rivera">
+        </a>
+        <h2>Name: John Lloyd Rivera</h2>
+        <h2>Section: BSIT - 2B</h2>
+    </div>
+
+    <div class="neds">
+        <a href="https://www.facebook.com/nejoelemalquinojr" target="_blank">
+            <img src="dev_icon/neds.png" alt="neds">
+        </a>
+        <h2>Name: Nejoelem Alquino Jr.</h2>
+        <h2>Section: BSIT - 2B</h2>
+    </div>
+
+    <div class="drew">
+        <a href="https://www.facebook.com/drew.teleron.2025" target="_blank">
+            <img src="dev_icon/drew.png" alt="drew">
+        </a>
+        <h2>Name: Drew Teleron</h2>
+        <h2>Section: BSIT - 2B</h2>
+    </div>
+
+    <div class="xyron">
+        <a href="https://www.facebook.com/djronixtan143" target="_blank">
+            <img src="dev_icon/xyron.png" alt="xyron">
+        </a>
+        <h2>Name: Xyron Balasabas</h2>
         <h2>Section: BSIT - 2B</h2>
     </div>
 
