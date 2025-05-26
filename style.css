@@ -480,3 +480,37 @@ button[class="admin"]{
 .setting{
     color: red;
 }
+
+.dashboard{
+    padding-left: 10px;
+    padding-top: 3%;
+    display: flex;
+    gap: 215%;
+    padding-bottom: 3%;
+}
+
+button[class="logout"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+button[class="total"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: rgb(6, 209, 6);
+    color: white;
+    padding: 10px;
+}
+
+button[class="total"]:hover{
+    background-color: rgb(68, 143, 68);
+}
+
+button[class="logout"]:hover{
+    background-color: rgb(177, 3, 3);
+}
