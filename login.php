@@ -40,6 +40,13 @@
         </div>
     </div>
 
+    <div class="out">
+        <a href="index.php">
+            <img src="icon/signout.png" alt="logout">
+        </a>
+    </div>
+
+
         <?php
         $conn = mysqli_connect("localhost", "root", "", "qr_code");
 
