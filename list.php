@@ -50,11 +50,11 @@ $result = $conn->query("SELECT * FROM information");
                 </tr>
             <?php } ?>
         </table>
-        <a href="login.php">
-            <img src="icon/back.png" alt="back">
-        </a>
+        <div class="dashboard">
+            <button class="logout" onclick="window.location.href='login.php'">Logout</button>
+            <button class="total" onclick="window.location.href='dashboard.php'">Dashboard</button>
+        </div>
     </div>
-
 
 </body>
 </html>
