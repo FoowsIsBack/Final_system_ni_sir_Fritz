@@ -319,6 +319,86 @@ img[src="dev_icon/lopez.jpg"]{
     padding-top: 10px;
 }
 
+.drew{
+    position: absolute;
+    top: 110%;
+    left: 8%;
+    padding: 10px;
+    background-color: white;
+    border: 20px;
+    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img[src="dev_icon/drew.png"]{
+    width: 80%;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.rivera{
+    position: absolute;
+    top: 100%;
+    left: 39%;
+    padding: 10px;
+    background-color: white;
+    border: 20px;
+    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img[src="dev_icon/rivera.png"]{
+    width: 80%;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.neds{
+    position: absolute;
+    top: 110%;
+    left: 70%;
+    padding: 10px;
+    background-color: white;
+    border: 20px;
+    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img[src="dev_icon/neds.png"]{
+    width: 80%;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.xyron{
+    position: absolute;
+    top: 150%;
+    left: 39%;
+    padding: 10px;
+    background-color: white;
+    border: 20px;
+    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img[src="dev_icon/xyron.png"]{
+    width: 80%;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
 img[src="icon/back.png"]{
     position: absolute;
     top: 102%;
