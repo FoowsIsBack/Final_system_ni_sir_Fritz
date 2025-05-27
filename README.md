@@ -37,7 +37,8 @@ CREATE TABLE information (
     profile_pic VARCHAR(255),
     age INT,
     user_info VARCHAR(255),
-    gender VARCHAR(10)
+    gender VARCHAR(10),
+    qr_code VARCHAR(255)
 );
 
 ```
