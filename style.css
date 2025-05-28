@@ -43,15 +43,25 @@ body{
     left: 40%;
 }
 
+.title_qr{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}
+
+.zero{
+    color: black;
+}
+
 .dash_title{
     position: absolute;
     top: 8.7%;
-    left: 21.6%;
+    left: 21.9%;
 }
 
 .dash_icon{
     position: absolute;
-    top: 11%;
+    top: 10.5%;
     left: 19%;
 }
 
@@ -66,7 +76,13 @@ video{
 .listing{
     position: absolute;
     top: 15%;
-    left: 15%;
+    left: 11%;
+}
+
+.listing_qr{
+    position: absolute;
+    top: 15%;
+    left: 20%;
 }
 
 .clickers{
@@ -81,11 +97,20 @@ video{
 }
 
 img{
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     border-radius: 8px;
     align-items: center;
     padding-bottom: 2%;
+}
+
+img[alt="QR Code"] {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgb(8, 121, 8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 p{
@@ -235,8 +260,8 @@ tr:hover{
 }
 
 .pic{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
 }
 
@@ -510,7 +535,25 @@ button[class="logout"]{
     padding: 10px;
 }
 
+button[class="back_qr"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
 button[class="total"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: rgb(6, 209, 6);
+    color: white;
+    padding: 10px;
+}
+
+button[class="r_qr"]{
     cursor: pointer;
     font-size: larger;
     border-radius: 5px;
@@ -524,6 +567,10 @@ button[class="total"]:hover{
 }
 
 button[class="logout"]:hover{
+    background-color: rgb(177, 3, 3);
+}
+
+button[class="back_qr"]:hover{
     background-color: rgb(177, 3, 3);
 }
 
@@ -582,4 +629,17 @@ button[class="logout"]:hover{
     position: absolute;
     top: 41%;
     left: 19%;
+}
+
+.out1{
+    position: absolute;
+    top: 41%;
+    left: 19%;
+}
+
+
+.resultqrqr{
+    position: absolute;
+    top: 41%;
+    left: 75%;
 }
