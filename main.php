@@ -8,47 +8,46 @@
     <link rel="shortcut icon" href="icon/qr.png" type="image/x-icon">
     <title>STUDENT GENERATE QR CODE</title>
 </head>
-
 <body>
 
     <video autoplay muted loop>
         <source src="video/bg.mp4" type="video/mp4">
     </video>
 
-    <h1>STUDENT GENERATE QR CODE</h1>
-        
-    <div class="ui_1">
-        <img src="icon/qr.png">
-        <form action="main.php" method="post" enctype="multipart/form-data">
-            <div class="main">
-                    <h2>FULL NAME:</h2>
-                    <input type="text" name="user_info" placeholder="Ex. Dave Bangcoyo" required>
 
-                    <h2>AGE:</h2>
-                    <input type="number" name="age" placeholder="Ex. 20" required>
+<h1>STUDENT GENERATE QR CODE</h1>
 
-                    <h2>GENDER:</h2>
-                    <input type="radio" name="gender" id="male" value="male">
-                    <label for="male">Male</label>
-                    <br>
-                    <input type="radio" name="gender" id="female" value="female">
-                    <label for="female">Female</label>
+<div class="ui_1">
+    <img src="icon/qr.png">
+    <form action="main.php" method="post" enctype="multipart/form-data">
+        <div class="main">
+            <h2>FULL NAME:</h2>
+            <input type="text" name="user_info" placeholder="Ex. Dave Bangcoyo" required>
 
-                    <h2>PROFILE PIC:</h2>
-                    <input type="file" name="profile_pic" id="file" accept="uploads/*" required>
-                    <hr>
-                    <div class="clickers">
-                        <button type="submit">Add Record</button>
-                    </div>
-                    <div class="dev">
-                        <a class="setting" href="developer.php">Developer?</a>
-                    <a href="index.php">
-                        <img src="icon/logout.png" alt="logout">
-                    </a>
-                    </div>
+            <h2>AGE:</h2>
+            <input type="number" name="age" placeholder="Ex. 20" required>
+
+            <h2>GENDER:</h2>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+
+            <h2>PROFILE PIC:</h2>
+            <input type="file" name="profile_pic" id="file" accept="image/*" required>
+            <hr>
+            <div class="clickers">
+                <button type="submit">Add Record</button>
             </div>
-        </form>
-    </div>
+            <div class="dev">
+                <a class="setting" href="developer.php">Developer?</a>
+                <a href="index.php">
+                    <img src="icon/logout.png" alt="logout">
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
 
 <?php
 include 'db.php';
@@ -79,6 +78,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bind_param("ssis", $info, $profile, $age, $gender);
 
             if ($stmt->execute()) {
+                $last_id = $conn->insert_id;
+
+                // Include QR code library
+                include 'phpqrcode/qrlib.php';
+
+                // Create QR code
+                $qr_data = "ID: $last_id\nName: $info\nAge: $age\nGender: $gender";
+                $qr_filename = "uploads/qr_$last_id.png";
+                QRcode::png($qr_data, $qr_filename, QR_ECLEVEL_L, 4);
+
+                // Save QR code path to DB
+                $update = $conn->prepare("UPDATE information SET qr_code = ? WHERE id = ?");
+                $update->bind_param("si", $qr_filename, $last_id);
+                $update->execute();
+
                 header("Location: main.php");
                 exit();
             } else {
@@ -92,7 +106,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
 
 </body>
 </html>
