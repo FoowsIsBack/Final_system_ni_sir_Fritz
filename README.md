@@ -3,7 +3,7 @@
 PHP QR CODE GENERATOR SETUP Follow This!
 
 STEP 1: Download the PHP QR Code Library
-- Link: https://sourceforge.net/projects/phpqrcode/
+[Link](https://sourceforge.net/projects/phpqrcode/)
 - Extract and place the folder into your project directory (e.g., phpqrcode)
 
 STEP 2: Enable GD Library in XAMPP
