@@ -42,9 +42,9 @@
                     </div>
                     <div class="dev">
                         <a class="setting" href="developer.php">Developer?</a>
-                        <a href="login.php">
-                            <img src="icon/logout.png" alt="logout">
-                        </a>
+                    <a href="index.php">
+                        <img src="icon/logout.png" alt="logout">
+                    </a>
                     </div>
             </div>
         </form>
