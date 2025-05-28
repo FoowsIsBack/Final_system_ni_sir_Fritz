@@ -1,30 +1,49 @@
 # SETUP
 ```sh
-PHP QR CODE GENERATOR SETUP Follow This!
+PHP QR Code Generator Setup Instructions
+========================================
 
-STEP 1: Download the PHP QR Code Library
-[Link](https://sourceforge.net/projects/phpqrcode/)
-- Extract and place the folder into your project directory (e.g., phpqrcode)
+Step 1: Download the QR Code Library
+---------------------------------------
+- Download the PHP QR Code library from:
+  https://sourceforge.net/projects/phpqrcode/
 
-STEP 2: Enable GD Library in XAMPP
-1. Open the file: C:\xampp\php\php.ini
-2. Find the line: ;extension=gd
-3. Remove the semicolon so it becomes: extension=gd
-4. Save the php.ini file
+- Extract it and place the folder into your project directory.
+  Example folder name: phpqrcode
 
-STEP 3: Restart Apache
-- Open XAMPP Control Panel
-- Stop Apache
-- Start Apache again
+Step 2: Enable GD Extension in XAMPP
+---------------------------------------
+1. Open the php.ini file located in your XAMPP directory:
+   C:\xampp\php\php.ini
 
-STEP 4: Confirm GD Library is Working
-1. Create a new file in htdocs named: info.php
+2. Search for the line:
+   ;extension=gd
+
+3. Remove the semicolon to enable it:
+   extension=gd
+
+4. Save the php.ini file.
+
+Step 3: Restart Apache
+--------------------------
+- Go to your XAMPP Control Panel.
+- Stop Apache.
+- Start Apache again.
+
+Step 4: Confirm GD Library is Working
+----------------------------------------
+1. Create a file named "info.php" inside your htdocs folder.
+
 2. Add the following code:
 
    <?php phpinfo(); ?>
 
-3. Open your browser and go to: http://localhost/info.php
+3. Open your browser and visit:
+   http://localhost/info.php
+
 4. Look for a section titled gd. If it appears, it means it's enabled
+
+You're now ready to generate QR codes using PHP!
 ```
 
 # MAIN
