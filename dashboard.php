@@ -55,6 +55,10 @@
             <img src="icon/signout.png" alt="logout">
         </a>
     </div>
+
+    <div class="resultqrqr">
+    <button class="r_qr" onclick="window.location.href='qr_result.php'">QR Result</button>
+    </div>
     
 </body>
 </html>
