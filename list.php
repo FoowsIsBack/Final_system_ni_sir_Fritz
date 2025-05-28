@@ -32,7 +32,6 @@ $result = $conn->query("SELECT * FROM information");
                 <th>FULL NAME</th>
                 <th>AGE</th>
                 <th>GENDER</th>
-                <th>QR</th>
                 <th>SETTING</th>
             </tr>
 
@@ -43,7 +42,6 @@ $result = $conn->query("SELECT * FROM information");
                     <td><?= htmlspecialchars($row['user_info']) ?></td>
                     <td><?= (int)$row['age'] ?></td>
                     <td><?= htmlspecialchars($row['gender']) ?></td>
-                    <td></td>
                     <td>
                         <a class="setting" id="del" href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Delete this student?')">Delete</a>
                     </td>
