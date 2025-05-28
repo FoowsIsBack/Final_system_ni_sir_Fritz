@@ -80,15 +80,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($stmt->execute()) {
                 $last_id = $conn->insert_id;
 
-                // Include QR code library
                 include 'phpqrcode/qrlib.php';
 
-                // Create QR code
                 $qr_data = "ID: $last_id\nName: $info\nAge: $age\nGender: $gender";
                 $qr_filename = "uploads/qr_$last_id.png";
                 QRcode::png($qr_data, $qr_filename, QR_ECLEVEL_L, 4);
 
-                // Save QR code path to DB
                 $update = $conn->prepare("UPDATE information SET qr_code = ? WHERE id = ?");
                 $update->bind_param("si", $qr_filename, $last_id);
                 $update->execute();
