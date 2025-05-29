@@ -8,16 +8,16 @@ body{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 6%;
-    left: 35%;
+    top: 10%;
+    left: 39%;
 }
 
 .person1{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 8%;
-    left: 35%;
+    top: 12%;
+    left: 40%;
 }
 
 .ui{
@@ -27,8 +27,8 @@ body{
     box-shadow: 5px 10px 8px black;
     padding-bottom: 20px;
     position: absolute;
-    top: 15%;
-    left: 35%;
+    top: 20%;
+    left: 40%;
 }
 
 .qr_generate{
@@ -92,8 +92,8 @@ video{
 
 .out{
     position: absolute;
-    top: 65%;
-    left: 35%;
+    top: 69%;
+    left: 40%;
 }
 
 img{
