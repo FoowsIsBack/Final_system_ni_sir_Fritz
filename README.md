@@ -80,8 +80,7 @@ NOTE: The profile picture can't be changed yet because it is still under develop
 ![image](https://github.com/user-attachments/assets/493bb2f5-1c47-4282-8b9d-ae32b819a779)
 
 # DEv
-![image](https://github.com/user-attachments/assets/17a29cbd-1ea0-41f4-91d2-ce6c5c2c7d2d)
-![image](https://github.com/user-attachments/assets/ccd5edc5-d0f1-4986-b9ad-b3437ef47977)
+![image](https://github.com/user-attachments/assets/6ec94d2c-bcf6-48d2-ad2f-467cdf6b78ca)
 
 # COMMAND CREATE TABLES
 ```sql
