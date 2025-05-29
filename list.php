@@ -43,6 +43,8 @@ $result = $conn->query("SELECT * FROM information");
                     <td><?= (int)$row['age'] ?></td>
                     <td><?= htmlspecialchars($row['gender']) ?></td>
                     <td>
+                        <a class="edit" id="upd" href="update.php?id=<?= $row['id'] ?>">Edit</a>
+                        |
                         <a class="setting" id="del" href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Delete this student?')">Delete</a>
                     </td>
                 </tr>
