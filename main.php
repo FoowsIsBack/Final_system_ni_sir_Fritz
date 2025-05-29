@@ -28,7 +28,7 @@
             <input type="number" name="age" placeholder="Ex. 20" required>
 
             <h2>GENDER:</h2>
-            <input type="radio" name="gender" id="male" value="male">
+            <input type="radio" name="gender" id="male" value="male" required>
             <label for="male">Male</label><br>
             <input type="radio" name="gender" id="female" value="female">
             <label for="female">Female</label>
