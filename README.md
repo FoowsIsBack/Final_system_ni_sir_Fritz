@@ -61,6 +61,12 @@ You're now ready to generate QR codes using PHP!
 # All Student Details
 ![image](https://github.com/user-attachments/assets/517084a2-5e00-474d-8949-913dd547c487)
 
+# Student Edit Information
+![image](https://github.com/user-attachments/assets/bf453b9d-f636-446f-8f48-02bc8ebb2be5
+```sh
+NOTE: The profile picture can't be changed yet because it is still under development.
+```
+
 # All Student QR Code
 ![image](https://github.com/user-attachments/assets/4a7f718c-5f53-42bd-94ff-0380507e6150)
 
