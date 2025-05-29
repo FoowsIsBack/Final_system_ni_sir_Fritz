@@ -76,7 +76,7 @@ video{
 .listing{
     position: absolute;
     top: 15%;
-    left: 15%;
+    left: 10%;
 }
 
 .listing_qr{
@@ -92,7 +92,7 @@ video{
 
 .out{
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 35%;
 }
 
@@ -265,181 +265,9 @@ tr:hover{
     border-radius: 5px;
 }
 
-.dev_title{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    width: 100%;
-}
-
 .h1_title{
     font-size: 250%;
     font-weight: 200%;
-}
-
-.led{
-    position: absolute;
-    top: 9%;
-    left: 45%;
-}
-
-.leader{
-    font-size: 300%;
-}
-
-.dave{
-    position: absolute;
-    top: 19%;
-    left: 39%;
-    padding: 10px;
-    background-color: white;
-    border: 20px;
-    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-img[src="dev_icon/dave.jpg"]{
-    width: 80%;
-    border-radius: 5%;
-    padding-top: 10px;
-}
-
-.member{
-    position: absolute;
-    top: 35%;
-    left: 15%;
-}
-
-.brylle{
-    position: absolute;
-    top: 45%;
-    left: 8%;
-    padding: 10px;
-    background-color: white;
-    border: 20px;
-    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-img[src="dev_icon/brylle.jpg"]{
-    width: 70%;
-    border-radius: 5%;
-    padding-top: 10px;
-}
-
-.member1{
-    position: absolute;
-    top: 35%;
-    left: 75%;
-}
-
-.lopez{
-    position: absolute;
-    top: 45%;
-    left: 70%;
-    padding: 10px;
-    background-color: white;
-    border: 20px;
-    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-img[src="dev_icon/lopez.jpg"]{
-    width: 74%;
-    border-radius: 5%;
-    padding-top: 10px;
-}
-
-.drew{
-    position: absolute;
-    top: 110%;
-    left: 8%;
-    padding: 10px;
-    background-color: white;
-    border: 20px;
-    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-img[src="dev_icon/drew.png"]{
-    width: 80%;
-    border-radius: 5%;
-    padding-top: 10px;
-}
-
-.rivera{
-    position: absolute;
-    top: 100%;
-    left: 39%;
-    padding: 10px;
-    background-color: white;
-    border: 20px;
-    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-img[src="dev_icon/rivera.png"]{
-    width: 80%;
-    border-radius: 5%;
-    padding-top: 10px;
-}
-
-.neds{
-    position: absolute;
-    top: 110%;
-    left: 70%;
-    padding: 10px;
-    background-color: white;
-    border: 20px;
-    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-img[src="dev_icon/neds.png"]{
-    width: 80%;
-    border-radius: 5%;
-    padding-top: 10px;
-}
-
-.xyron{
-    position: absolute;
-    top: 150%;
-    left: 39%;
-    padding: 10px;
-    background-color: white;
-    border: 20px;
-    box-shadow: -1px 8px 54px 0px rgba(0,0,0,1);
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-img[src="dev_icon/xyron.png"]{
-    width: 80%;
-    border-radius: 5%;
-    padding-top: 10px;
 }
 
 img[src="icon/back.png"]{
@@ -533,6 +361,16 @@ button[class="logout"]{
     background-color: red;
     color: white;
     padding: 10px;
+}
+
+button[class="backtoback"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 250px;
 }
 
 button[class="back_qr"]{
@@ -636,7 +474,6 @@ button[class="back_qr"]:hover{
     top: 41%;
     left: 19%;
 }
-
 
 .resultqrqr{
     position: absolute;
