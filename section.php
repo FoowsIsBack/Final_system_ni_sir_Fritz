@@ -28,9 +28,9 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $total_2a = $conn->query("SELECT COUNT(*) AS total FROM information WHERE section = '2a'")->fetch_assoc()['total'];
-    $total_2b = $conn->query("SELECT COUNT(*) AS total FROM information WHERE section = '2b'")->fetch_assoc()['total'];
-    $total_2c = $conn->query("SELECT COUNT(*) AS total FROM information WHERE section = '2c'")->fetch_assoc()['total'];
+    $total_2a = $conn->query("SELECT COUNT(*) AS total FROM information WHERE section = 'BSIT - 2A'")->fetch_assoc()['total'];
+    $total_2b = $conn->query("SELECT COUNT(*) AS total FROM information WHERE section = 'BSIT - 2B'")->fetch_assoc()['total'];
+    $total_2c = $conn->query("SELECT COUNT(*) AS total FROM information WHERE section = 'BSIT - 2C'")->fetch_assoc()['total'];
     ?>
 
     <div class="section_info">
