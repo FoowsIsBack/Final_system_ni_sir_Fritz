@@ -400,6 +400,34 @@ button[class="r_qr"]{
     padding: 10px;
 }
 
+button[class="all_student_sec"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: rgb(6, 209, 6);
+    color: white;
+    padding: 10px;
+}
+
+button[class="all_student_sec2"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: rgb(6, 209, 6);
+    color: white;
+    padding: 10px;
+}
+
+button[class="all_student_sec3"]{
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: rgb(6, 209, 6);
+    color: white;
+    padding: 10px;
+}
+
+
 button[class="total"]:hover{
     background-color: rgb(68, 143, 68);
 }
@@ -427,6 +455,23 @@ button[class="back_qr"]:hover{
     padding-left: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.section_info{
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 27px 4px rgba(0, 0, 0, 0.69);
+    width: 60%;
+    display: flex;
+    gap: 1%;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .box1{
@@ -459,24 +504,52 @@ button[class="back_qr"]:hover{
 
 .pp{
     text-align: center;
-    font-size: larger;
+    font-size: x-large;
     color: blue;
 }
 
 .out1{
     position: absolute;
-    top: 41%;
+    top: 39%;
     left: 19%;
 }
 
-.out1{
+.out2{
     position: absolute;
-    top: 41%;
+    top: 43%;
     left: 19%;
 }
 
 .resultqrqr{
     position: absolute;
-    top: 41%;
+    top: 39%;
     left: 75%;
+}
+
+.resultqrqr1{
+    position: absolute;
+    top: 43%;
+    left: 75%;
+}
+
+.total_number{
+    color: red;
+}
+
+.all_student_sec{
+    position: absolute;
+    top: 75%;
+    left: 13%;
+}
+
+.all_student_sec2{
+    position: absolute;
+    top: 75%;
+    left: 46%;
+}
+
+.all_student_sec3{
+    position: absolute;
+    top: 75%;
+    left: 78%;
 }
