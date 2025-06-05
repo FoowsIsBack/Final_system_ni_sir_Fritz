@@ -14,7 +14,8 @@ if (isset($_POST['update'])) {
 
     $conn->query("UPDATE information SET user_info='$user_info', age='$age', gender='$gender' WHERE id=$id");
     sleep(3);
-    header("Location: list.php");
+    echo "<script>alert('Student update successfully!');window.location.href = 'section.php';
+    </script>";
     exit;
 }
 ?>
@@ -63,7 +64,7 @@ if (isset($_POST['update'])) {
                 </div>
                 <br>
                 <div class="cancel">
-                    <a class="cancel_edit" href="list.php">Cancel edit?</a>
+                    <a class="cancel_edit" href="section.php">Cancel edit?</a>
                 </div>
             </div>
         </form>
