@@ -14,7 +14,6 @@
         <source src="video/bg.mp4" type="video/mp4">
     </video>
 
-
 <h1>STUDENT GENERATE QR CODE</h1>
 
 <div class="ui_1">
@@ -33,8 +32,16 @@
             <input type="radio" name="gender" id="female" value="female">
             <label for="female">Female</label>
 
+            <h2>SECTION:</h2>
+            <input type="radio" name="section" id="2a" value="2A" required>
+            <label for="2a">2A</label><br>
+            <input type="radio" name="section" id="2b" value="2B">
+            <label for="2b">2B</label><br>
+            <input type="radio" name="section" id="2c" value="2C">
+            <label for="2c">2C</label>
+
             <h2>PROFILE PIC:</h2>
-            <input type="file" name="profile_pic" id="file" accept="image/*" required>
+            <input class="fileuplders" type="file" name="profile_pic" id="file" accept="image/*" required>
             <hr>
             <div class="clickers">
                 <button type="submit">Add Record</button>
@@ -56,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $info = ucwords(trim($_POST['user_info'] ?? ''));
     $age = intval($_POST['age'] ?? 0);
     $gender = ucwords(trim($_POST['gender'] ?? ''));
+    $section = strtoupper(trim($_POST['section'] ?? ''));
     $profile = '';
 
     if (isset($_FILES['profile_pic']) && $_FILES['profile_pic']['error'] === 0) {
@@ -74,21 +82,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         if (move_uploaded_file($_FILES['profile_pic']['tmp_name'], $upload_path)) {
-            $stmt = $conn->prepare("INSERT INTO information (user_info, profile_pic, age, gender) VALUES (?, ?, ?, ?)");
-            $stmt->bind_param("ssis", $info, $profile, $age, $gender);
+            $stmt = $conn->prepare("INSERT INTO information (user_info, profile_pic, age, gender, section) VALUES (?, ?, ?, ?, ?)");
+            $stmt->bind_param("ssiss", $info, $profile, $age, $gender, $section);
 
             if ($stmt->execute()) {
                 $last_id = $conn->insert_id;
 
                 include 'phpqrcode/qrlib.php';
 
-                $qr_data = "ID: $last_id\nName: $info\nAge: $age\nGender: $gender";
+                $qr_data = "ID: $last_id\nName: $info\nAge: $age\nGender: $gender\nSection: $section";
                 $qr_filename = "uploads/qr_$last_id.png";
                 QRcode::png($qr_data, $qr_filename, QR_ECLEVEL_L, 4);
 
                 $update = $conn->prepare("UPDATE information SET qr_code = ? WHERE id = ?");
                 $update->bind_param("si", $qr_filename, $last_id);
                 $update->execute();
+
                 sleep(3);
                 header("Location: main.php");
                 exit();
