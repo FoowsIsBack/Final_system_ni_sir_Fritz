@@ -43,7 +43,7 @@
         <div class="student_sec">
             <button class="all_student_sec" onclick="window.location.href='2A.php'">All Student</button>
             <button class="all_student_sec2" onclick="window.location.href='2B.php'">All Student</button>
-            <button class="all_student_sec3" onclick="window.location.href='2B.php'">All Student</button>
+            <button class="all_student_sec3" onclick="window.location.href='2C.php'">All Student</button>
         </div>
 
         <div class="box2">
