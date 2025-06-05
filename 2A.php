@@ -46,7 +46,7 @@ $result = $conn->query("SELECT * FROM information WHERE section = 'BSIT - 2A'");
                     <td>
                         <a class="edit" id="upd" href="update.php?id=<?= $row['id'] ?>">Edit</a>
                         |
-                        <a class="setting" id="del" href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Delete this student?')">Delete</a>
+                        <a class="setting" id="del" href="delete_a.php?id=<?= $row['id'] ?>" onclick="return confirm('Delete this student?')">Delete</a>
                     </td>
                 </tr>
             <?php } ?>
