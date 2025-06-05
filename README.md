@@ -62,7 +62,7 @@ You're now ready to generate QR codes using PHP!
 ![image](https://github.com/user-attachments/assets/685769a0-578a-4960-8769-bb2ae0740852)
 
 # All Student Details
-![image](https://github.com/user-attachments/assets/c2cac03a-9dcd-46f7-b1d1-00dceaabcc62)
+![image](https://github.com/user-attachments/assets/b8c61d2e-27fd-4ac1-bfde-3e779c5e8190)
 
 # Student Edit Information
 ![image](https://github.com/user-attachments/assets/aa982d69-862e-49aa-8435-7a49ab3af79c)
@@ -71,16 +71,16 @@ NOTE: The profile picture can't be changed yet because it is still under develop
 ```
 
 # All Student QR Code
-![image](https://github.com/user-attachments/assets/4a7f718c-5f53-42bd-94ff-0380507e6150)
+![image](https://github.com/user-attachments/assets/7870473c-fc5b-45c7-a11d-8dfb2ca438d3)
 
 # DASHBOARD
-![image](https://github.com/user-attachments/assets/3aaf993f-f0a2-45e3-b26e-3e2f2f24f0cd)
+![image](https://github.com/user-attachments/assets/3955ab16-8b8c-4628-8e89-4e8d79f78626)
 
 # DATABASE Student (information)
-![image](https://github.com/user-attachments/assets/21cc7495-87ea-4808-91d4-a4c6c2601273)
+![image](https://github.com/user-attachments/assets/004285fb-9e8f-413c-8f88-bb30a4120dd5)
 
 # DATABASE Login (users)
-![image](https://github.com/user-attachments/assets/493bb2f5-1c47-4282-8b9d-ae32b819a779)
+![image](https://github.com/user-attachments/assets/f300f6d4-cff2-4dcf-a62b-489eb633e064)
 
 # DEv
 ![image](https://github.com/user-attachments/assets/6ec94d2c-bcf6-48d2-ad2f-467cdf6b78ca)
