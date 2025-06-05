@@ -34,11 +34,11 @@
 
             <h2>SECTION:</h2>
             <input type="radio" name="section" id="2a" value="2A" required>
-            <label for="2a">2A</label><br>
+            <label for="2a">BSIT - 2A</label><br>
             <input type="radio" name="section" id="2b" value="2B">
-            <label for="2b">2B</label><br>
+            <label for="2b">BSIT - 2B</label><br>
             <input type="radio" name="section" id="2c" value="2C">
-            <label for="2c">2C</label>
+            <label for="2c">BSIT - 2C</label>
 
             <h2>PROFILE PIC:</h2>
             <input class="fileuplders" type="file" name="profile_pic" id="file" accept="image/*" required>
@@ -98,9 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $update->bind_param("si", $qr_filename, $last_id);
                 $update->execute();
                 sleep(3);
-                echo "<script>
-                    alert('Record added successfully!');
-                    window.location.href = 'main.php';
+                echo "<script>alert('Record added successfully!');window.location.href = 'main.php';
                 </script>";
                 exit();
             } else {
