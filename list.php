@@ -31,6 +31,7 @@ $result = $conn->query("SELECT * FROM information");
                 <th>FULL NAME</th>
                 <th>AGE</th>
                 <th>GENDER</th>
+                <th>SECTION</th>
                 <th>SETTING</th>
             </tr>
 
@@ -41,6 +42,7 @@ $result = $conn->query("SELECT * FROM information");
                     <td><?= htmlspecialchars($row['user_info']) ?></td>
                     <td><?= (int)$row['age'] ?></td>
                     <td><?= htmlspecialchars($row['gender']) ?></td>
+                    <td><?= htmlspecialchars($row['section']) ?></td>
                     <td>
                         <a class="edit" id="upd" href="update.php?id=<?= $row['id'] ?>">Edit</a>
                         |
@@ -50,7 +52,7 @@ $result = $conn->query("SELECT * FROM information");
             <?php } ?>
         </table>
         <div class="dashboard">
-            <button class="logout" onclick="window.location.href='login.php'">Logout</button>
+            <button class="logout" onclick="window.location.href='qr_result.php'">Back</button>
             <button class="total" onclick="window.location.href='dashboard.php'">Dashboard</button>
         </div>
     </div>
