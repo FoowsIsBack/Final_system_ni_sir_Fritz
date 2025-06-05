@@ -92,13 +92,13 @@ CREATE DATABASE qr_code;
 USE qr_code;
 
 CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY,
     username VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE information (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY,
     profile_pic VARCHAR(255),
     age INT,
     user_info VARCHAR(255),
