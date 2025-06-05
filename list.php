@@ -13,7 +13,6 @@ $result = $conn->query("SELECT * FROM information");
     <link rel="shortcut icon" href="icon/qr.png" type="image/x-icon">
     <title>Student Details</title>
 </head>
-
 <body>
 
     <div class="bg">
