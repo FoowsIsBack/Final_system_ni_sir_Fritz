@@ -105,4 +105,5 @@ CREATE TABLE information (
     gender VARCHAR(10),
     qr_code VARCHAR(255),
     section VARCHAR(10)
+);
 ```
