@@ -71,7 +71,7 @@ NOTE: The profile picture can't be changed yet because it is still under develop
 ![image](https://github.com/user-attachments/assets/4a7f718c-5f53-42bd-94ff-0380507e6150)
 
 # DASHBOARD
-![image](https://github.com/user-attachments/assets/b5ff24ef-643a-4f55-8a9d-848546a1ad8e)
+![image](https://github.com/user-attachments/assets/3aaf993f-f0a2-45e3-b26e-3e2f2f24f0cd)
 
 # DATABASE Student (information)
 ![image](https://github.com/user-attachments/assets/21cc7495-87ea-4808-91d4-a4c6c2601273)
