@@ -52,6 +52,7 @@ $result = $conn->query("SELECT * FROM information");
         </table>
         <div class="dashboard">
             <button class="back_qr" onclick="window.location.href='dashboard.php'">Back</button>
+            <button class="total" onclick="window.location.href='list.php'">All Student</button>
         </div>
     </div>
 
