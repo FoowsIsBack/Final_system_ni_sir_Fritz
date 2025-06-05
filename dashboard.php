@@ -36,22 +36,22 @@
     <div class="dashboard_info">
         <div class="box1">
             <h2 class="h22">Total Students</h2>
-            <p class="pp">Total: <?= ($total) ?></p>
+            <p class="pp">Total = <span class="total_number"><?= ($total) ?></span></p>
         </div>
         <br>    
         <div class="box2">
             <h2 class="h22">Male Students</h2>
-            <p class="pp">Total: <?= ($male) ?></p>
+            <p class="pp">Total = <span class="total_number"><?= ($male) ?></span></p>
         </div>
         <br>
         <div class="box3">
             <h2 class="h22">Female Students</h2>
-            <p class="pp">Total: <?= ($female) ?></p>
+            <p class="pp">Total = <span class="total_number"><?= ($female) ?></span></p>
         </div>
     </div>
 
     <div class="out1">
-        <a href="list.php">
+        <a href="section.php">
             <img src="icon/signout.png" alt="logout">
         </a>
     </div>
