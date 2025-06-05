@@ -100,7 +100,8 @@ CREATE TABLE information (
     age INT,
     user_info VARCHAR(255),
     gender VARCHAR(10),
-    qr_code VARCHAR(255)
+    qr_code VARCHAR(255),
+    section VARCHAR(10)
 );
 
 ```
