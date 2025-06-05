@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-$result = $conn->query("SELECT * FROM information WHERE section = '2A'");
+$result = $conn->query("SELECT * FROM information WHERE section = 'BSIT - 2A'");
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $result = $conn->query("SELECT * FROM information WHERE section = '2A'");
                     <td><?= htmlspecialchars($row['user_info']) ?></td>
                     <td><?= (int)$row['age'] ?></td>
                     <td><?= htmlspecialchars($row['gender']) ?></td>
-                    <td>BSIT -<?= htmlspecialchars($row['section']) ?></td>
+                    <td><?= htmlspecialchars($row['section']) ?></td>
                     <td>
                         <a class="edit" id="upd" href="update.php?id=<?= $row['id'] ?>">Edit</a>
                         |
