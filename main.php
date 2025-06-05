@@ -97,9 +97,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $update = $conn->prepare("UPDATE information SET qr_code = ? WHERE id = ?");
                 $update->bind_param("si", $qr_filename, $last_id);
                 $update->execute();
-
                 sleep(3);
-                header("Location: main.php");
+                echo "<script>
+                    alert('Record added successfully!');
+                    window.location.href = 'main.php';
+                </script>";
                 exit();
             } else {
                 echo "Database insert failed: " . $stmt->error;
